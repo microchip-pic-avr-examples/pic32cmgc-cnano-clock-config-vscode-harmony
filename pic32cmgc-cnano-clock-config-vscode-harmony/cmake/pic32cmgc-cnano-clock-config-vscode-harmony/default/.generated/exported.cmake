@@ -1,0 +1,13 @@
+set(DEPENDENT_MP_BIN2HEXpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU "c:/Program Files/Microchip/xc32/v6.00/bin/xc32-bin2hex.exe")
+set(DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU ${CMAKE_CURRENT_LIST_DIR}/../../../../out/pic32cmgc-cnano-clock-config-vscode-harmony/default.elf)
+set(DEPENDENT_TARGET_DIRpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU ${CMAKE_CURRENT_LIST_DIR}/../../../../out/pic32cmgc-cnano-clock-config-vscode-harmony)
+set(DEPENDENT_BYPRODUCTSpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}/${sourceFileNamepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}.c)
+add_custom_command(
+    OUTPUT ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}/${sourceFileNamepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}.c
+    COMMAND ${DEPENDENT_MP_BIN2HEXpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU} --image ${DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU} --image-generated-c ${sourceFileNamepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}.c --image-generated-h ${sourceFileNamepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}.h --image-copy-mode ${modepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU} --image-offset ${addresspic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU} 
+    WORKING_DIRECTORY ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}
+    DEPENDS ${DEPENDENT_DEPENDENT_TARGET_ELFpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU})
+add_custom_target(
+    dependent_produced_source_artifactpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU 
+    DEPENDS ${DEPENDENT_TARGET_DIRpic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}/${sourceFileNamepic32cmgc_cnano_clock_config_vscode_harmony_default_pJvMaTOU}.c
+    )

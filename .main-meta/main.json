@@ -1,0 +1,66 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu.vscode.project.pic32cmgc-cnano-clock-config-vscode-harmony",
+        "version": "1.0.0",
+        "displayName": "Clock Configuration on PIC32CM GC00 Devices",
+        "projectName": "pic32cmgc-cnano-clock-config-vscode-harmony",
+        "shortDescription": "This example demonstrates how to configure a PIC32CM5112GC00048 device to achieve a synchronous 72 MHz MCLK and 4 MHz asynchronous clock. The PIC32CM GC00 Curiosity Nano board will be used, and configuration is done using Harmony.",
+        "ide": [
+            {
+                "name": "MPLAB-VSCODE",
+                "semverRange": ">=1.2.8"
+            }
+        ],
+        "compiler": [
+            {
+                "name": "XC32",
+                "semverRange": "^6.00.0"
+            }
+        ],
+        "dfp": {
+            "name": "PIC32CM-GC00_DFP",
+            "semverRange": "^1.0.27"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=5.6.2"
+        },
+        "device": [
+            {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.contentRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "category": "com.microchip.device",
+                    "name": "PIC32CM5112GC00048",
+                    "versionRange": "*"
+                }
+            }
+        ],
+        "author": "Karylle Shainne Cadalzo",
+        "peripherals": [
+            "Clock"
+        ],
+        "keywords": [
+            "Clock", 
+            "Clock Controller", 
+            "Harmony", 
+            "MHC", 
+            "Getting Started"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}

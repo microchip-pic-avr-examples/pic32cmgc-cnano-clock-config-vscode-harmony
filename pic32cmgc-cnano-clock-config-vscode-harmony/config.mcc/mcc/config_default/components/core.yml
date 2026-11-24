@@ -1,0 +1,543 @@
+configVersion: 1.0.0
+componentName: core
+coreVersion: 5.9.1
+device: PIC32CM5112GC00048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: core
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.1
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    GCLK_CYCLE_FORMED:
+      attributes:
+        id: GCLK_CYCLE_FORMED
+        label: GCLK_CYCLE_FORMED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    GCLK_1_FREQ:
+      attributes:
+        id: GCLK_1_FREQ
+        label: GCLK1 Clock Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '4000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_1_SRC:
+      attributes:
+        id: GCLK_1_SRC
+        label: Source Selection
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '5'
+          type: Dynamic
+        - attributes:
+            value: '4'
+          type: User
+        type: Values
+      type: KeyValueSet
+    GCLK_1_DIVIDER_VALUE:
+      attributes:
+        id: GCLK_1_DIVIDER_VALUE
+        label: GCLK_1_DIVIDER_VALUE
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '12'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_1_DIV:
+      attributes:
+        id: GCLK_1_DIV
+        label: Division Factor
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '2'
+          type: Dynamic
+        - attributes:
+            value: '12'
+          type: User
+        type: Values
+      type: Integer
+    GCLK_1_IMPROVE_DUTYCYCLE:
+      attributes:
+        id: GCLK_1_IMPROVE_DUTYCYCLE
+        label: Enable 50/50 Duty Cycle
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    GCLK_IO_1_FREQ:
+      attributes:
+        id: GCLK_IO_1_FREQ
+        label: External Input (GCLK_IO[1]) Frequency
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '4000000'
+          type: Dynamic
+        type: Values
+      type: Integer
+    GCLK_1_OUTPUTENABLE:
+      attributes:
+        id: GCLK_1_OUTPUTENABLE
+        label: Output GCLK clock signal on IO pin?
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    PIN_28_MODE:
+      attributes:
+        id: PIN_28_MODE
+        label: Mode
+      type: String
+    PIN_28_FUNCTION_TYPE:
+      attributes:
+        id: PIN_28_FUNCTION_TYPE
+        label: Type
+      type: String
+    PORT_GROUP_2_PINCFG3:
+      attributes:
+        id: PORT_GROUP_2_PINCFG3
+        label: PORT GROUP C PINCFG3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_3_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_3_USED
+        label: PORT_GROUP_2_PIN_3_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'false'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_28_INEN:
+      attributes:
+        id: PIN_28_INEN
+        label: Input Enable
+      type: String
+    PORT_GROUP_2_DIR:
+      attributes:
+        id: PORT_GROUP_2_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_DIR:
+      attributes:
+        id: PIN_28_DIR
+        label: Direction
+      type: String
+    PORT_GROUP_2_PMUX1:
+      attributes:
+        id: PORT_GROUP_2_PMUX1
+        label: PORT GROUP C PMUX1
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_3:
+      attributes:
+        id: PORT_GROUP_2_PAD_3
+        label: PORT_GROUP_2_PAD_3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC03
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_28_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_28_FUNCTION_NAME:
+      attributes:
+        id: PIN_28_FUNCTION_NAME
+        label: Name
+      type: String
+    PORT_GROUP_2_OUT:
+      attributes:
+        id: PORT_GROUP_2_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_28_LAT:
+      attributes:
+        id: PIN_28_LAT
+        label: Initial Latch Value
+      type: String
+    PIN_25_MODE:
+      attributes:
+        id: PIN_25_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_25_FUNCTION_TYPE:
+      attributes:
+        id: PIN_25_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GCLK_IO1
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_2_PMUX0:
+      attributes:
+        id: PORT_GROUP_2_PMUX0
+        label: PORT GROUP C PMUX0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0xa'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PAD_0:
+      attributes:
+        id: PORT_GROUP_2_PAD_0
+        label: PORT_GROUP_2_PAD_0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PC00
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PINCFG0:
+      attributes:
+        id: PORT_GROUP_2_PINCFG0
+        label: PORT GROUP C PINCFG0
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x1'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_2_PIN_0_USED:
+      attributes:
+        id: PORT_GROUP_2_PIN_0_USED
+        label: PORT_GROUP_2_PIN_0_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_25_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_25_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: K
+          type: User
+        type: Values
+      type: String
+    SYSTICK_FILE_0:
+      attributes:
+        id: SYSTICK_FILE_0
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    SYSTICK_FILE_1:
+      attributes:
+        id: SYSTICK_FILE_1
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    SYSTICK_FILE_2:
+      attributes:
+        id: SYSTICK_FILE_2
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    systickSystemInitFile:
+      attributes:
+        id: systickSystemInitFile
+      children:
+      - children:
+        - attributes:
+            id: enabled
+          children:
+          - type: Value
+            value: 'true'
+          type: Boolean
+        type: Attributes
+      type: File
+    systickEnable:
+      attributes:
+        id: systickEnable
+        label: Enable SysTick
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    PIN_28_PULLEN:
+      attributes:
+        id: PIN_28_PULLEN
+        label: Pull Enable
+      type: String
+    PIN_44_MODE:
+      attributes:
+        id: PIN_44_MODE
+        label: Mode
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PIN_44_FUNCTION_TYPE:
+      attributes:
+        id: PIN_44_FUNCTION_TYPE
+        label: Type
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_PINCFG7:
+      attributes:
+        id: PORT_GROUP_3_PINCFG7
+        label: PORT GROUP D PINCFG7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PIN_7_USED:
+      attributes:
+        id: PORT_GROUP_3_PIN_7_USED
+        label: PORT_GROUP_3_PIN_7_USED
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: 'true'
+          type: Dynamic
+        type: Values
+      type: Boolean
+    PIN_44_INEN:
+      attributes:
+        id: PIN_44_INEN
+        label: Input Enable
+      children:
+      - children:
+        - attributes:
+            value: ''
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_DIR:
+      attributes:
+        id: PORT_GROUP_3_DIR
+        label: Port Pin Direction
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x80'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_DIR:
+      attributes:
+        id: PIN_44_DIR
+        label: Direction
+      children:
+      - children:
+        - attributes:
+            value: Out
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_PMUX3:
+      attributes:
+        id: PORT_GROUP_3_PMUX3
+        label: PORT GROUP D PMUX3
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x0'
+          type: Dynamic
+        type: Values
+      type: String
+    PORT_GROUP_3_PAD_7:
+      attributes:
+        id: PORT_GROUP_3_PAD_7
+        label: PORT_GROUP_3_PAD_7
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: PD07
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_PERIPHERAL_FUNCTION:
+      attributes:
+        id: PIN_44_PERIPHERAL_FUNCTION
+        label: Peripheral Selection
+      children:
+      - children:
+        - attributes:
+            value: GPIO
+          type: User
+        type: Values
+      type: String
+    PIN_44_FUNCTION_NAME:
+      attributes:
+        id: PIN_44_FUNCTION_NAME
+        label: Name
+      children:
+      - children:
+        - attributes:
+            value: LED
+          type: User
+        type: Values
+      type: String
+    PORT_GROUP_3_OUT:
+      attributes:
+        id: PORT_GROUP_3_OUT
+        label: Port Pin Output Value
+      children:
+      - children:
+        - attributes:
+            id: core
+            value: '0x80'
+          type: Dynamic
+        type: Values
+      type: String
+    PIN_44_LAT:
+      attributes:
+        id: PIN_44_LAT
+        label: Initial Latch Value
+      children:
+      - children:
+        - attributes:
+            value: High
+          type: User
+        type: Values
+      type: String
+  userData:
+    children:
+    - attributes:
+        canvasHeight: '0'
+        canvasWidth: '0'
+      type: GraphSettings
+    - children:
+      - attributes:
+          id: profile0
+          name: Main
+        type: Profile
+      type: PowerProfiles
+    type: UserData
